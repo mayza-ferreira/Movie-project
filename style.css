@@ -1,0 +1,81 @@
+html {
+  margin: 0%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  background-image: url(/blur.png);
+  background-repeat: no-repeat;
+}
+h1 {
+  margin: 0;
+  color: #b18788;
+}
+h2 {
+  margin: 0;
+  padding: 5px;
+}
+.card {
+  line-height: normal;
+  font-family: "Benne", serif;
+
+  /**padding: 40px 70px;**/
+
+  background: #fff;
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.info {
+  text-decoration: none;
+  color: #b18788;
+}
+
+.img-fluid {
+  border-radius: 5px;
+}
+
+button {
+  font-family: "Benne", serif;
+  font-weight: bold;
+  color: #b18788;
+  border-style: none;
+  background: linear-gradient(
+    0deg,
+    rgba(206, 214, 177, 0.7413340336134453) 0%,
+    rgba(211, 164, 123, 0.7553396358543417) 100%
+  );
+  box-shadow: 2px 2px 2px #daebda;
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(206, 214, 177, 0.36318277310924374) 2%,
+    rgba(211, 164, 123, 0.8679446778711485) 98%
+  );
+  color: #b18788;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 500px !important;
+    padding: 39px 50px 5px 50px !important;
+  }
+  button,
+  source,
+  p {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
